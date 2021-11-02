@@ -29,7 +29,7 @@
 
                         <input type="number" name="altura" value="" id="altura" step=.01><br><br>
 
-                    <p id="res">Resultado</p><br>
+                    <p id="res"></p><br>
                         <input type="button" name="imc" id="imc" onclick="imc()">
 
                 </div>
@@ -43,7 +43,7 @@
                 var peso = Number(peso.value)
                 var altura = Number(altura.value)
                 var total = peso/(altura*altura)
-                res.innerHTML = total
+                res.innerHTML ='O resultado do seu IMC foi ' + total
             }
         </script>
     </body>
