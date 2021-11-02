@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+   
+}
+div1{
+  width: 250px;
+  height: 250px;
+  border: 2px; solid; black;
+}
+
+div2{
+   
+
+}
+
+div3{
+    background: rgb(133, 205, 50);
+}
+
+div4{
+    background: rgb(171, 205, 50);
+}
+
+div5{
+    background: rgb(50, 143, 205); 
+}
