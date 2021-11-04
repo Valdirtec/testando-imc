@@ -11,7 +11,7 @@
     <body>
         <header>
             <h1 class="titulo">Calculando o IMC</h1>
-            <h2 class="subtitulo">Vamos Começar</h2>
+            <h2 class="subtitulo">Vamos Começar!</h2>
         </header>
         <main>
             
@@ -20,7 +20,7 @@
                     <p>Digite seu nome:</p><br>
 
                         <input type="text" name="nome" id="nome" value="" size="35"><br><br>
-
+                    
                     <p>Digite seu peso:</p><br>
 
                         <input type="number" name="peso" id="peso" value="" step=.01><br><br>
@@ -29,21 +29,25 @@
 
                         <input type="number" name="altura" value="" id="altura" step=.01><br><br>
 
-                    <p id="res"></p><br>
-                        <input type="button" name="imc" id="imc" onclick="imc()">
+                    <div id="res"></div><br><br>
+
+                        <input type="button" name="imc" value="CLICK"
+                          id="imc" onclick="imc()">
 
                 </div>
             </label>
         </main>
         <script>
             function imc(){
+                var nome = document.getElementById("nome")
                 var peso = document.getElementById("peso")
                 var altura = document.getElementById("altura")
                 var res = document.getElementById("res")
                 var peso = Number(peso.value)
                 var altura = Number(altura.value)
+                var nome
                 var total = peso/(altura*altura)
-                res.innerHTML ='O resultado do seu IMC foi ' + total
+                res.innerHTML = nome + ' o resultado do seu IMC foi ' + total
             }
         </script>
     </body>
