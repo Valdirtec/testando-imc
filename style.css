@@ -15,7 +15,6 @@ body{
   padding: 10px;
   border-color: rgb(0, 132, 255);
   border-radius: 10px;
-
 }
 
 header{
@@ -37,6 +36,24 @@ header{
 input{
   border-radius: 10px;
   box-shadow: 4px 4px 4px rgba(2, 2, 27, 0.932);
+  transition: 0.2s ease;
+}
+
+#altura:hover{
+  color: #2e1978;
+  font-weight: bold;
+  font-size: 22px;
+}
+#nome:hover{
+  color: #2e1978;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#peso:hover{
+  color: #2e1978;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 p{
