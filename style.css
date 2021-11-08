@@ -6,6 +6,11 @@ body{
    font-family: Arial, Helvetica, sans-serif;
    background-image:linear-gradient(to right, #811db9, #2e1978, #437dd6);
 }
+
+main{
+ /* display: flex;*/
+}
+
 .div1{
   width: 350px;
   height: 450px;
@@ -78,6 +83,8 @@ aside{
   padding: 3px;
   text-align: left;
   margin-top: 75px;
+  position: fixed;
+  bottom: -10px;
  
 }
 #res{
@@ -88,4 +95,15 @@ aside{
 }
 h2{
   padding-top: 15px;
+}
+
+#botao{
+  width: 65px;
+  height: 60px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 2px;
+  border-radius:10px;
+  border: 3px solid black;
+
 }
