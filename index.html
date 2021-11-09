@@ -6,36 +6,55 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Testando IMC</title>
+
         <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
-        <header>
-            <h1 class="titulo">Calculando o IMC</h1>
-            <h2 class="subtitulo">Vamos Começar!</h2>
-        </header>
-        <main>
-            
-            <label for="">
-                <div class="div1">
-                    <p>Digite seu nome:</p><br>
+        
+        <main class="principal">
 
-                        <input type="text" name="nome" id="nome" value="" size="25"><br><br>
-                    
-                    <p>Digite seu peso:</p><br>
+                <p class="resultado ordem1">Resultado</p>
 
-                        <input type="number" name="peso" id="peso" value="" step=.01><br><br>
-
-                    <p>Digite sua altura:</p><br>
-
-                        <input type="number" name="altura" value="" id="altura" step=.01><br><br>
-
-                    <div id="res">Resposta</div><br><br>
-
-                 <button type="button" id="botao" name="imc" onclick="imc()">CLICK</button>
+            <div class="conteudo ordem0">
                 
-                </div>
-            </label>
-        </main>
+                   <!-- <h1>Calculando o IMC</h1>
+                    <h2>Vamos começar!</h2>
+                    
+                    <p>Digite seu nome:</p>
+                    <div class="divnome">
+                        <input type="text" name="nome" id="nome" value="" placeholder="nome" maxlength="25" size="25">
+                    </div>
+
+                    <p>Digite seu peso:</p>
+                    <div class="divpeso">
+                        <input type="text" name="peso" id="peso" value="" placeholder="peso" maxlength="7" size="7">
+                    </div>
+
+                    <p>Digite sua altura:</p>
+                    <div class="divaltura">
+                        <input type="text" name="altura" id="altura" value="" placeholder="altura" maxlength="5" size="5">
+                    </div>
+
+                    <div>
+                        <button class="botao">
+                            <strong>Calcular</strong>
+                        </button>
+                    </div> -->
+                
+                    
+            
+
+            </div>
+
+            
+                <img src="tabela_imcmenor.png" class="img ordem2" alt="Tabela do IMC">
+                
+           </figure> 
+
+       </main>
+
+      
         <script>
             function imc(){
                 var nome = document.getElementById("nome")
@@ -44,13 +63,10 @@
                 var res = document.getElementById("res")
                 var peso = Number(peso.value)
                 var altura = Number(altura.value)
-                var nome
+                var nome = (nome.value)
                 var total = peso/(altura*altura)
                 res.innerHTML = nome + ' o resultado do seu IMC foi ' + total
             }
         </script>
-
-<input class=input type="text" name="imc" value="CLICK">
-
     </body>
 </html>
