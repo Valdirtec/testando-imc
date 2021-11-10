@@ -14,47 +14,42 @@
         
         <main class="principal">
 
-                <p class="resultado ordem1">Resultado</p>
+            <p class="resultado ordem1" id="res">Resultado</p>
 
             <div class="conteudo ordem0">
-                
-                   <!-- <h1>Calculando o IMC</h1>
+
+                <div class="titulos">
+                    <h1>Calculando o IMC</h1>
                     <h2>Vamos começar!</h2>
-                    
-                    <p>Digite seu nome:</p>
+                </div><br>
+
+                    <p class="p">Digite seu nome:</p><br>
+
                     <div class="divnome">
-                        <input type="text" name="nome" id="nome" value="" placeholder="nome" maxlength="25" size="25">
-                    </div>
+                        <input type="text" name="nome" id="nome" placeholder="nome" value="" maxlength="25" size="25">
+                    </div><br>
+                
+                    <p class="p">Digite seu peso:</p><br>
 
-                    <p>Digite seu peso:</p>
                     <div class="divpeso">
-                        <input type="text" name="peso" id="peso" value="" placeholder="peso" maxlength="7" size="7">
-                    </div>
+                        <input type="text" name="peso" id="peso" placeholder="peso" value="" maxlength="7" size="7">
+                    </div><br>
 
-                    <p>Digite sua altura:</p>
+                    <p class="p">Digite sua altura:</p><br>
+
                     <div class="divaltura">
-                        <input type="text" name="altura" id="altura" value="" placeholder="altura" maxlength="5" size="5">
-                    </div>
+                        <input type="text" name="altura" id="altura" placeholder="altura" value="" maxlength="5" size="5">
+                    </div><br><br><br><br><br>
 
-                    <div>
-                        <button class="botao">
-                            <strong>Calcular</strong>
-                        </button>
-                    </div> -->
-                
-                    
-            
-
+                    <div class="divbtn">
+                        <button class="botao" value="imc" onclick="imc()">Calcular</button>
+                     </div>
             </div>
-
-            
-                <img src="tabela_imcmenor.png" class="img ordem2" alt="Tabela do IMC">
+                                                  
+            <img src="tabela_imcmenor.png" class="img ordem2" alt="Tabela do IMC">
                 
-           </figure> 
+        </main>
 
-       </main>
-
-      
         <script>
             function imc(){
                 var nome = document.getElementById("nome")
@@ -65,7 +60,7 @@
                 var altura = Number(altura.value)
                 var nome = (nome.value)
                 var total = peso/(altura*altura)
-                res.innerHTML = nome + ' o resultado do seu IMC foi ' + total
+                res.innerHTML = nome + ' o valor do seu IMC (Índice de Massa Corpórea) é '  + total + '.' 
             }
         </script>
     </body>
